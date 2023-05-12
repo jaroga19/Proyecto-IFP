@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PeakCrux</title>
+		<link rel="stylesheet" href="css/Style.css">
+		<script src="javascript/Script.js"></script>
+		
+		<!-- Todas las imágenes tienen la etiqueta alt=""-->
+			
+
+	
+		<link rel="preload" as="image" href="media/hero1.jpg" alt="sa cova del diablo">
+		<link rel="preload" as="image" href="media/hero01.jpg" alt="Ondra en su 9b+">
+		<link rel="preload" as="image" href="media/heroo01.jpg" alt="ana en techo el terrible">
+		
+		
+
+
+	
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	
+	</head>
+	<body>
+	
+		
+		<div id="modalBienve">
+			<div id="modaleBoxB">
+				<h1 >Bienvenido a PEAK CRUX</h1>
+				<button id="modalBoxBienv" onclick="cerrarMB()">
+					<span>Comienza</span>
+				</button>
+			</div>
+		</div>
+		
+		<header id="encabezado" >
+			<picture>
+				<img width="200px" src="media/logo-tt.png">
+				<tool-tip role="tooltip">
+					Escalaaaa <b>
+				</tool-tip>
+			</picture>
+
+			<div class="fondosHero mainSlideAnim" id="fondoHero1" ></div>
+			<div class="fondosHero" id="fondoHero2" ></div>
+			<div class="fondosHero" id="fondoHero3" ></div>
+			
+
+			<div id="contenedorEncabezado">
+				<div class="logoEncabezado"></div>
+				<nav id="navBar">
+					<a href="index.html">
+						<img id="logo" src="media/Logotipo.png" alt="">
+					</a>
+
+					<ul id="menuNav">
+						<li class="nav-item">
+							<a href="#encabezado" class="navIcon">Inicio</a>
+							
+						<li class="nav-item">	
+							<a href="#mapa" class="navIcon">Mapa</a>
+						</li>	
+						<li class="nav-item">
+							<a href="#ideales" class="navIcon">Ideales</a>
+						</li>	
+						<li class="nav-item">
+							<a href="#registros" class="navIcon">Registros</a>
+							<ul id="subMenu">
+						        <li class="elementoSuMenu"><a href="aVista">A VISTA</a></li>
+						        <li class="elementoSuMenu"><a href="metFlash">FLASH</a></li>
+						        <li class="elementoSuMenu"><a href="redP">RED POINT</a></li>
+					      </ul>
+						</li>						
+						<li class="nav-item">	
+							<a href="#galeria" class="navIcon">Galería</a>
+						</li>	
+						<li class="nav-item">	
+							<a href="#contacto" class="navIcon">Contacto</a>
+						</li>
+						<div class="active"></div>
+					</ul>	
+				</nav>
+				<h1 id="tituloencabezado">PEAK CRUX</h1>
+				<h2 id="subtituloencabezado">Tu página de escalada</h2>
+			</div>	
+		</header>
+
+	
+		<section id="mapa">
+			
+			<h2 class="tituloMapa" data-aos="fade-up">Mapa</h2>
+			<div id="contenedorMapa">
+				<img src="media/mapa-isla.png" class="imagenMapa" alt="Mapa de sectores de la isla">
+				<p class="textoMapa">Mapa de la isla en la cual aparecen las diferentes áreas de escalada, y el número de vías que poseen</p>
+			</div>
+		</section>
+
+		<section id="ideales">
+			<h2 class="tituloIdeales" data-aos="fade-up">Ideales</h2>
+			<div id="contenedorIdeales"> 
+				<div class="colIdeales">
+					<p>Peak Crux, quiere crear una comunidad de escaladores, la cual mantengan la ética de la escalada, perseveren el cuidado de la naturaleza y el entorno. 
+					Con esto queremos que los diferentes usuarios, vayan registrando sus ascensos en las diferentes áreas, vara ir viendo su progreso, añadir imágenes y videos. 
+					Además de poder interactuar entre ellos, manteniendo conversaciones, e incluso pudiendo hacer quedadas para ir a la montaña a escalar juntos</p>
+				</div>
+				<div class="colIdeales">
+					<img src="media/910nYSNRw-L-min-scaled.jpg" class="imagenId" alt="Imagen Ideales">
+				</div>
+			</div>
+		</section>
+
+		<section id="registros">
+
+			<h2 class="tituloRegistros" data-aos="fade-up">Registros</h2>
+
+			<div class="contenedorRegistros">
+				<div class="tipoAsc">
+					<p class="aVista">A VISTA</p>
+					<p class="metFlash">FLASH</p>
+					<p class="redP">RED POINT</p>
+				</div>
+				<div class="modoAsc">
+					<img src="media/javikano.jpg" alt="Imagen de ascenso de Javi Kano" class="imagenRe" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+					<p>Javi Kano</p>
+					<p>"Margot"</p>
+					<p>8b+</p>
+				</div>
+				<div class="modoAsc">
+					<img src="media/Megos.jpg" alt="Imagen de ascenso de Alex Megos" class="imagenRe" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+					<p>Alexander Megos</p>
+	         	    <p>"Estado crítico"</p>
+			 	    <p>9a</p>
+				</div>
+				<div class="modoAsc">
+					<img src="media/ikerpou.jpg" alt="Imagen de ascenso de Iker Pou" class="imagenRe" data-aos="fade-left"  data-aos-offset="300" data-aos-easing="ease-in-sine">
+					<p>Iker Pou</p>
+			        <p>"Alpinismo deportivo"</p>
+			        <p>8c</p>
+			    </div>
+			    <div class="modoAsc">
+					<img src="media/margo-hayes-en-papichulo-9a-oliana-750x440.jpg" alt="Imagen de ascenso de Margo Hayes" class="imagenRe"  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+			        <p>Margo Hayes</p>
+			        <p>"Papichulo"</p>
+			        <p>9a</p>
+				</div>
+				<div class="modoAsc">
+					<img src="media/Chris-1024x683.jpg" alt="Imagen de ascenso de Chris Sharma" class="imagenRe" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+				    <p>Chris Sharma</p>
+				    <p>"Sleeping Lion"</p>
+				    <p>9b+</p>
+				</div>
+				<div class="modoAsc">
+				    <img src="media/jorge-diaz-rullo-en-following-the-leader-en-octubre-de-2019.-foto-de-javi-pec-750x440.jpg" alt="Imagen de ascenso de Jorge Diaz-Rullo" class="imagenRe" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+				    <p>Jorge Díaz-Rullo</p>
+				    <p>"La planta de Shiva"</p>
+		         	<p>9b</p>
+				</div>
+			</div>
+		</section>
+		
+		<section id="galeria">
+			<h2 class="tituloGaleria" data-aos="fade-up">Galería</h2>
+			<div id="contenedorGaleria">
+				<div class="imgGaleria">
+					<img src="media/foto1-galeria.jpg" class="imagenGa" alt="Marta en Bunkers" data-aos="flip-right">
+				</div>
+
+				<div class=" ">
+					<img src="media/foto2-galeria.jpg" class="imagenGa" alt="Iker en el Toro" data-aos="flip-right">
+				</div>
+
+				<div class="imgGaleria">
+					<img src="media/foto3-galeria.jpg" class="imagenGa" alt="Charli en Monport" data-aos="flip-right">
+				</div>
+
+				<div class="imgGaleria">
+					<img src="media/foto4-galeria.jpg" class="imagenGa" alt="Dani psicoblock en el dique" data-aos="flip-right">
+				</div>
+
+				<div class="imgGaleria">
+					<img src="media/foto5-galeria.jpg" class="imagenGa" alt="Nachete en sector Yosemite, Portugal" data-aos="flip-right">
+				</div>
+
+				<div class="imgGaleria">
+					<img src="media/foto6-galeria.jpg" class="imagenGa" alt="Yo desmontando mi primer 6b en Caimari">
+				</div>	
+			</div>
+			<div id="modalLightboxG">
+				<div id="imageToShow">
+
+				</div>
+				<button class="lbButtons lbbRight" onclick="nextImgGal()">
+					<i class="fas fa-angle-right"></i>
+				</button> 
+
+				<button class="lbButtons lbbLeft" onclick="prevImgGal()">
+					<i class="fas fa-angle-left"></i>
+				</button>
+			</div> 
+		</div>
+		</section>
+
+		<section id="contacto" data-aos="fade-up">
+			<h2 class="tituloContacto">Contacto</h2>
+			<div id="contenedorContacto">
+				<div class="sobrePeak">
+					<h3>Sobre Peak Crux</h3>
+					<p>Peak Crux, no sólo es una página de escalada, desde el equipo, queremos que se convierta en una filosofía de vida
+					Retomar los valores iniciales, el compañerismo, la comunidad, que crezcamos todos juntos, tanto a nivel deportivo como en esta pequeña familia que acabamos de fundar.
+					Disfruta, respeta, escala y apoyanos</p>
+				</div>
+				<div class="elmContacto">
+					<h3>Contacto</h3>
+					<p>Si quieres formar parte del equipo,
+					ponte en contacto con nosotros a través de: 
+					peakcrux-team@gmail.com
+
+					Si necesitas solucionar cualquier problema con la página web, contáctanos a través de 
+					peakcrux-support@gmail.com
+
+					Gracias, y escala! </p>
+				</div>
+				<div class="formulario">
+					<form action="#" id="formu">
+						<p id="listaFormulario">Formulario: </p>
+						<label for="name">Nombre</label>
+						<input id="formNombre" type="text" name="Nombre" placeholder="Nombre y Apellidos" required>
+
+						<label for="email">Email</label>
+						<input id="formEmail" type="email" name="correo" placeholder="Correo" required>
+						
+						<label for="number">Nº de Teléfono</label>
+						<input id="forNumber" type="number" name="Numero" placeholder="Número de teléfono" required>
+
+						<label for="message">Mensaje</label>
+						<input id="formMensaje" type="text" name="texto" placeholder="Mensaje" required>
+						
+						<input id="buttonEnviar"  onclick="modalReserva()" value="Enviar" type="submit">
+						<!-- Boton enviar type submit-->
+					</form>
+
+				</div>
+			</div>
+			<div id="modalReserva">
+				<div id="modaleBoxR">
+					<h1>Mensaje de confirmación</h1>
+					<p id="mensajeFormu">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Obcaecati, praesentium.</p>
+					<button id="botonCerrarMBR" class="buttonForm" onclick="cerrarMBR()">Comienza</button>
+				</div>
+			</div>
+		</section>
+
+		<footer id="pie">
+			<div id="contenedorFooter">
+				<div class="icons">
+					<a href="#" class="icon icon--instagram">
+				      <img src="media/logo-instagram.png" class="iconLogo">
+				    </a>
+				    <a href="#" class="icon icon--twitter">
+				      <img src="media/logo-twitter.png" class="iconLogo">
+				    </a>
+				    <a href="#" class="icon icon--facebook">
+				      <img src="media/logo-facebook.png" class="iconLogo">
+				    </a>
+				</div>    	
+			</div>
+		</footer>
+		<script>
+			modalBienvenida();
+			
+			setInterval(slideshowAnim,3000);
+			setInterval(heroSlideshow,3000);
+			
+			readyLB();
+			
+		</script>
+		<script>
+  			AOS.init();
+		</script>
+	</body>
+</html>
+
+
